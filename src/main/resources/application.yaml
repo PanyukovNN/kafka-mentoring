@@ -1,0 +1,17 @@
+
+server:
+  port: 8888
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      acks: all
+    consumer:
+      group-id: mentoring-group
+
+app:
+  kafka:
+    change-fio:
+      enabled: true
+      topic: ChangeFio.V1

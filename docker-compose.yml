@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  kafka-mentoring:
+    build: .
+    ports:
+      - 9090-9092:8888
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    deploy:
+      replicas: 3
